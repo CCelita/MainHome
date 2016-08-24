@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="我的书籍">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/book1"
+                    android:title="红楼梦"
+                    android:icon="@drawable/ic_accessibility_24dp"/>
+
+                <item android:title="西游记"
+                      android:id="@+id/book2"
+                      android:icon="@drawable/ic_accessibility_24dp"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="我的电影">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/book3"
+                    android:title="老九门"
+                      android:icon="@drawable/ic_accessibility_24dp"/>
+
+                <item android:title="长歌行"
+                      android:id="@+id/book4"
+                      android:icon="@drawable/ic_accessibility_24dp"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="我的游戏">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="LOL"
+                      android:id="@+id/book5"
+                      android:icon="@drawable/ic_accessibility_24dp"/>
+                <item android:title="Dota"
+                      android:id="@+id/book6"
+                      android:icon="@drawable/ic_accessibility_24dp"/>
+            </group>
+        </menu>
+    </item>
+</menu>

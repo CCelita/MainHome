@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feicuiedu.mainhome.mainhome.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:openDrawer="start">
+
+    <!--DrawerLayout下面有两个页面，其中第一个页面是显示到手机上的主页面
+    另外一个就是侧滑页面-->
+
+
+    <include
+        layout="@layout/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Widget.Design.NavigationView"
+        app:headerLayout="@layout/main_header"
+        app:menu="@menu/menu_main">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
